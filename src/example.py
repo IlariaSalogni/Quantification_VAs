@@ -48,6 +48,7 @@ if __name__ == '__main__':
     # load the IMDb dataset
     train, test = qp.datasets.fetch_reviews('kindle', tfidf=True, min_df=5).train_test
 
+
     # model selection
     # let us assume we want to explore our hyperparameter alpha along with one hyperparameter of the classifier
     train, val = train.split_stratified(train_prop=0.75)
