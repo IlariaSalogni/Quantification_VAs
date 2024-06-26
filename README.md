@@ -1,6 +1,6 @@
-# Hierarchial Quantification
+# Hierarchical Quantification: directly estimate prevalence
 
-### Overview
+## Overview
 This repository contains the code implemented for the methods described in my master thesis, titled "From Classification to Quantification: New Methods for Estimating Cause-of-Death Prevalence from Verbal Autopsies" The primary focus of this work is to explore novel text quantification techniques that leverage the intrinsic hierarchical nature of mortality statistics datasets.
 It is a supervised learning task, with physician-determined causes of death serving as ground truth labels.
 
@@ -22,7 +22,9 @@ The notebook includes implementations of the following methods:
   2. "real" quantification algorithms, both aggregative ((ACC, PCC, PACC) and direct estimation (SLD), on results obtained with a flat classifier
   3. Classify-and-Count and ACC on results obtained with a hierarchical classifier
   4. Hierarchical versions of the quantification algorithms in 1 and 2
+
 We also provided comparation between tfidf representations and pre-trained embeddings, and tried to exploit the full data available in questionnaires by concatenating both closed question and textual narratives.
+To the best of our knowledge, it is the first time in literature that a hierarchical approach is developed. 
 
 ### What we found out
 The work started from the knowledge of the fact that quantification methods could be better for prior-shift settings. Suprisingly, many among the supposedly more sophisticated quantification methods often fail to improve over CC’s performance (i). Even the most sophisticated quantification method (SLD) does not stand as the top performer, while interestingly PCC is the algorithm that obtains the best results in most of the settings. Sporadic benefits have been observed by exploiting the hierarchical version of the proposed algorithms, but we have not obtained the net benefit we expected, neither in terms of better quantification
