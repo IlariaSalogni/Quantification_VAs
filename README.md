@@ -1,7 +1,7 @@
 # Hierarchical Quantification: directly estimate prevalence
 
 ## Overview
-This repository contains the code implemented for the methods described in my master thesis, titled "From Classification to Quantification: New Methods for Estimating Cause-of-Death Prevalence from Verbal Autopsies" The primary focus of this work is to explore novel text quantification techniques that leverage the intrinsic hierarchical nature of mortality statistics datasets.
+This repository contains the code implemented for the methods described in my master thesis, titled "_From Classification to Quantification: New Methods for Estimating Cause-of-Death Prevalence from Verbal Autopsies_" The primary focus of this work is to explore novel text quantification techniques that leverage the intrinsic hierarchical nature of mortality statistics datasets.
 It is a supervised learning task, with physician-determined causes of death serving as ground truth labels.
 
 ### What Verbal Autopsies are 
@@ -10,7 +10,7 @@ VAs were developed to address the need for fundamental registration of deaths al
 
 ### What quantification is 
 The process of training class prevalence estimators through supervised learning is termed quantification, as coined by [Forman, 2005](https://link.springer.com/chapter/10.1007/11564096_55) or as "learning to quantify".
-In literature, two main categories of quantification methods are recognised: aggregative methods, which involve classifying individual data items as an intermediate step, and non-aggregative methods, that address the quantification problem in its entirety, bypassing the need to classify individual items. In this section we will start from the more obvious method, \textit{Classify and Count}, then moving to direct methods for getting the aggregate level, that are expected to perform better in prior probability shift settings ([Moreo et al., 2023](https://dl.acm.org/doi/10.1145/3606264))
+In literature, two main categories of quantification methods are recognised: aggregative methods, which involve classifying individual data items as an intermediate step, and non-aggregative methods, that address the quantification problem in its entirety, bypassing the need to classify individual items. In this section we will start from the more obvious method, _Classify and Count_, then moving to direct methods for getting the aggregate level, that are expected to perform better in prior probability shift settings ([Moreo et al., 2023](https://dl.acm.org/doi/10.1145/3606264))
 
 ### Why quantification 
 VAs pertain to the field of epidemiology, in which the aim is obtaining estimates of disease prevalence across different geographical regions, time periods, and age groups. In this context, the focus shifts from individual data to aggregate data. The main goal here is that of estimating (by means of supervised learning) the prevalence of each class accurately also when the distribution of the classes in
